@@ -7,6 +7,10 @@
       "packages/*"
     ]
   },
+  "scripts" : {
+    "deploy:setup": "pm2 deploy pm2.config.js production setup",
+    "deploy": "pm2 deploy pm2.config.js production deploy"
+  },
   "devDependencies": {
     "@redwoodjs/core": "0.39.3",
     "pm2": "^5.1.2"
