@@ -11,7 +11,7 @@ module.exports = {
     {
       name,
       node_args: '-r dotenv/config',
-      cwd: `${path}/`,
+      cwd: `/home/${user}`,
       script: 'node_modules/@redwoodjs/api-server/dist/index.js',
       args: `-f api/dist/functions --port ${port}`,
       env: {
