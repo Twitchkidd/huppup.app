@@ -1,0 +1,19 @@
+diff --git a/node_modules/@redwoodjs/cli/dist/middleware/checkForBabelConfig.js b/node_modules/@redwoodjs/cli/dist/middleware/checkForBabelConfig.js
+index f522c5b..0860b7e 100644
+--- a/node_modules/@redwoodjs/cli/dist/middleware/checkForBabelConfig.js
++++ b/node_modules/@redwoodjs/cli/dist/middleware/checkForBabelConfig.js
+@@ -19,10 +19,12 @@ var _internal = require("@redwoodjs/internal");
+ var _colors = _interopRequireDefault(require("../lib/colors"));
+ 
+ const isUsingBabelRc = () => {
+-  return _fastGlob.default.sync('**/*/.babelrc(.*)?', {
++  const thing = _fastGlob.default.sync('**/*/.babelrc(.*)?', {
+     cwd: (0, _internal.getPaths)().base,
+     ignore: 'node_modules'
+-  }).length > 0;
++  });
++  console.log(thing);
++  return thing.length > 0;
+ };
+ 
+ const BABEL_SETTINGS_LINK = _colors.default.warning('https://redwoodjs.com/docs/builds');
