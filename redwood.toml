@@ -8,7 +8,8 @@
 [web]
   title = "Huppup"
   port = 8910
-  apiProxyPath = "/api"
+#  apiProxyPath = "/api"
+  apiUrl = "/api"
   experimentalFastRefresh = false
 #  apiUrl = "/.redwood/functions" # you can customise graphql and dbauth urls individually too: see https://redwoodjs.com/docs/app-configuration-redwood-toml#api-paths
 #  includeEnvironmentVariables = [] # any ENV vars that should be available to the web side, see https://redwoodjs.com/docs/environment-variables#web
