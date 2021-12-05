@@ -2266,7 +2266,7 @@
     tiny-warning "^1.0.3"
     tslib "^2.3.0"
 
-"@redwoodjs/api-server@0.39.3":
+"@redwoodjs/api-server@0.39.3", "@redwoodjs/api-server@^0.39.3":
   version "0.39.3"
   resolved "https://registry.yarnpkg.com/@redwoodjs/api-server/-/api-server-0.39.3.tgz#20843dcc2b7a2330fc180a7a396ab4053800e7ea"
   integrity sha512-xIgJv6WkEf1nValhMMMIRDWlsgnWrxhbRw73tkFU/4YPL7DfZgf+eskXz1Zb9GfDR5ZDwULDsIZXTer3z+Yvog==
