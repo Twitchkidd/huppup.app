@@ -1,22 +1,7 @@
-
-import { Link, routes } from '@redwoodjs/router'
+import BlogPostsCell from 'src/components/BlogPostsCell';
 
 const HomePage = () => {
-  return (
-    <>
-      <header>
-        <h1>Redwood Blog</h1>
-        <nav>
-          <ul>
-            <li>
-              <Link to={routes.about()}>About</Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <main>Home</main>
-    </>
-  )
-}
+  return <BlogPostsCell />;
+};
 
-export default HomePage
+export default HomePage;
