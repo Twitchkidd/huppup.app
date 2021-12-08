@@ -11,6 +11,15 @@ export const QUERY = gql`
   }
 `;
 
+export const beforeQuery = (props) => {
+  return {
+    variables: props,
+    fetchPolicy: 'cache-and-network',
+    notifyOnNetworkStatusChange: true,
+    errorPolicy: 'all',
+  };
+};
+
 export const Loading = () => <div>Loading...</div>;
 
 export const Empty = () => <div>Empty</div>;
