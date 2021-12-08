@@ -18,3 +18,8 @@ input.error,
 textarea.error {
   border: 1px solid red;
 }
+
+html,
+body {
+  background: #14141d;
+}
